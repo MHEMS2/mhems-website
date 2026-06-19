@@ -1,7 +1,7 @@
 baseURL = "https://morristownhamblenems.org/"
 languageCode = "en-us"
 title = "Morristown-Hamblen EMS"
-theme = ""
+
 
 [params]
   description = "Serving Morristown and Hamblen County with professional emergency medical services."
