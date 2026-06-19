@@ -1,0 +1,40 @@
+baseURL = "https://morristownhamblenems.org/"
+languageCode = "en-us"
+title = "Morristown-Hamblen EMS"
+theme = ""
+
+[params]
+  description = "Serving Morristown and Hamblen County with professional emergency medical services."
+  phone_primary = ""
+  email_contact = "dhouseright@mhems.com"
+  address = "Morristown, TN"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "News"
+    url = "/news/"
+    weight = 3
+  [[menu.main]]
+    name = "Administration"
+    url = "/administration/"
+    weight = 4
+  [[menu.main]]
+    name = "Gallery"
+    url = "/gallery/"
+    weight = 5
+  [[menu.main]]
+    name = "Employment"
+    url = "/employment/"
+    weight = 6
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 7
