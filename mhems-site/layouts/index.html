@@ -1,0 +1,112 @@
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-eyebrow">Hamblen County, Tennessee</span>
+    <h1>{{ .Params.hero_headline | default "Dedicated to Your Care, Ready When It Matters Most" }}</h1>
+    <p>{{ .Params.hero_subtext | default "Morristown-Hamblen EMS provides professional emergency medical services to our community 24 hours a day, 365 days a year." }}</p>
+    <div class="hero-actions">
+      <a href="/contact/" class="btn btn-gold">Contact Us</a>
+      <a href="/about/" class="btn btn-outline">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats strip -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Always Available</div>
+      </div>
+      <div>
+        <div class="stat-num">ALS</div>
+        <div class="stat-label">Advanced Life Support</div>
+      </div>
+      <div>
+        <div class="stat-num">BLS</div>
+        <div class="stat-label">Basic Life Support</div>
+      </div>
+      <div>
+        <div class="stat-num">911</div>
+        <div class="stat-label">Emergency Response</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mission -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Mission</h2>
+      <div class="gold-bar"></div>
+      <p style="max-width:680px; margin:0 auto;">{{ .Params.mission | default "Morristown-Hamblen EMS is committed to providing the highest quality emergency medical care to every patient we serve, treating each person with dignity, compassion, and professionalism." }}</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-body text-center">
+          <div style="font-size:2.5rem; margin-bottom:0.75rem;">🚑</div>
+          <h3>Emergency Response</h3>
+          <p>Rapid, professional response to medical emergencies throughout Hamblen County.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body text-center">
+          <div style="font-size:2.5rem; margin-bottom:0.75rem;">❤️</div>
+          <h3>Patient Care</h3>
+          <p>Advanced and basic life support services delivered with compassion and skill.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body text-center">
+          <div style="font-size:2.5rem; margin-bottom:0.75rem;">🏘️</div>
+          <h3>Community First</h3>
+          <p>Proud to serve Morristown and all of Hamblen County around the clock.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Latest News -->
+<section class="bg-light">
+  <div class="container">
+    <div class="section-header">
+      <h2>Latest News</h2>
+      <div class="gold-bar"></div>
+    </div>
+    <div class="grid-3">
+      {{ range first 3 (where .Site.RegularPages "Section" "news") }}
+      <div class="card">
+        {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}" class="card-img" />{{ end }}
+        <div class="card-body">
+          <div class="news-meta">{{ .Date.Format "January 2, 2006" }}</div>
+          <h3 class="news-title">{{ .Title }}</h3>
+          <p class="news-excerpt">{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+          <a href="{{ .RelPermalink }}" class="read-more">Read more →</a>
+        </div>
+      </div>
+      {{ else }}
+      <div class="card"><div class="card-body"><p style="color:var(--steel)">News posts will appear here once published.</p></div></div>
+      {{ end }}
+    </div>
+    <div class="text-center mt-3">
+      <a href="/news/" class="btn btn-navy">View All News</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--navy); text-align:center; padding:3rem 0;">
+  <div class="container">
+    <h2 style="color:var(--white); margin-bottom:0.5rem;">Join Our Team</h2>
+    <div class="gold-bar"></div>
+    <p style="color:rgba(255,255,255,0.8); margin-bottom:1.5rem;">We are always looking for dedicated EMS professionals to serve our community.</p>
+    <a href="/employment/" class="btn btn-gold">View Open Positions</a>
+  </div>
+</section>
+
+{{ end }}

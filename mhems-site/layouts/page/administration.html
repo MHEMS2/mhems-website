@@ -1,0 +1,47 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> / Administration</div>
+    <h1>Administration</h1>
+    <div class="gold-bar"></div>
+  </div>
+</div>
+<section>
+  <div class="container">
+
+    <!-- Deputy Director Card -->
+    <div class="admin-card mb-3">
+      {{ if .Params.photo }}
+      <img src="{{ .Params.photo }}" alt="Deputy Director" class="admin-photo" />
+      {{ else }}
+      <div class="admin-photo-placeholder">Photo<br/>Coming<br/>Soon</div>
+      {{ end }}
+      <div>
+        <div class="admin-title">Deputy Director</div>
+        <div class="admin-name">{{ .Params.director_name | default "David Houseright" }}</div>
+        <div class="admin-credentials">{{ .Params.director_credentials | default "Paramedic · Registered Nurse" }}</div>
+        <div class="gold-bar left"></div>
+        {{ .Content }}
+      </div>
+    </div>
+
+    <!-- Other staff if added -->
+    {{ if .Params.staff }}
+    <h2 style="margin-top:3rem;">Leadership Team</h2>
+    <div class="gold-bar left"></div>
+    <div class="grid-3 mt-2">
+      {{ range .Params.staff }}
+      <div class="card">
+        <div class="card-body text-center">
+          <div class="admin-title">{{ .title }}</div>
+          <h3>{{ .name }}</h3>
+          <p style="font-size:0.875rem;">{{ .bio }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> / Employment</div>
+    <h1>Employment Opportunities</h1>
+    <div class="gold-bar"></div>
+  </div>
+</div>
+<section>
+  <div class="container" style="max-width:820px;">
+
+    <div class="employment-box mb-3">
+      <h3>Join the MHEMS Family</h3>
+      <p>{{ .Params.blurb | default "Morristown-Hamblen EMS is always looking for dedicated, compassionate EMS professionals to join our team. Whether you are a seasoned paramedic or just beginning your career in emergency medicine, we offer a supportive environment, competitive pay, and the opportunity to make a real difference in our community every single day." }}</p>
+      {{ with .Params.doc_url }}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="btn btn-gold">View Open Positions →</a>
+      {{ else }}
+      <a href="#" class="btn btn-gold">View Open Positions →</a>
+      {{ end }}
+    </div>
+
+    {{ .Content }}
+
+    <div class="grid-3 mt-3">
+      <div class="card">
+        <div class="card-body text-center">
+          <div style="font-size:2rem; margin-bottom:0.5rem;">🏥</div>
+          <h3>Benefits</h3>
+          <p style="font-size:0.9rem;">Competitive pay, health coverage, and professional development opportunities.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body text-center">
+          <div style="font-size:2rem; margin-bottom:0.5rem;">📋</div>
+          <h3>Requirements</h3>
+          <p style="font-size:0.9rem;">Valid Tennessee EMS certification and a commitment to excellence in patient care.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body text-center">
+          <div style="font-size:2rem; margin-bottom:0.5rem;">📞</div>
+          <h3>Questions?</h3>
+          <p style="font-size:0.9rem;">Contact us at <a href="mailto:dhouseright@mhems.com">dhouseright@mhems.com</a> for more information.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}

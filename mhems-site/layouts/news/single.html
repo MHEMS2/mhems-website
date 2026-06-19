@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> / <a href="/news/">News</a> / {{ .Title }}</div>
+    <h1>{{ .Title }}</h1>
+    <div class="gold-bar"></div>
+  </div>
+</div>
+<section>
+  <div class="container" style="max-width:760px;">
+    <div style="color:var(--steel); font-size:0.875rem; margin-bottom:1.5rem;">{{ .Date.Format "January 2, 2006" }}</div>
+    {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}" style="width:100%;border-radius:8px;margin-bottom:1.5rem;" />{{ end }}
+    {{ .Content }}
+    <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border);">
+      <a href="/news/" class="btn btn-navy">← Back to News</a>
+    </div>
+  </div>
+</section>
+{{ end }}

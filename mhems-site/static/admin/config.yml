@@ -1,0 +1,67 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "news"
+    label: "News"
+    folder: "content/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/_index.md"
+        fields:
+          - { label: "Hero Headline", name: "hero_headline", widget: "string" }
+          - { label: "Hero Subtext", name: "hero_subtext", widget: "string" }
+          - { label: "Mission Statement", name: "mission", widget: "text" }
+      - label: "About Page"
+        name: "about"
+        file: "content/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Administration"
+        name: "administration"
+        file: "content/administration.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Employment Page"
+        name: "employment"
+        file: "content/employment.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro Blurb", name: "blurb", widget: "text" }
+          - { label: "Google Doc URL", name: "doc_url", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact Page"
+        name: "contact"
+        file: "content/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Phone Numbers", name: "phones", widget: "list", fields: [{ label: "Label", name: "label", widget: "string" }, { label: "Number", name: "number", widget: "string" }] }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "gallery"
+    label: "Gallery"
+    folder: "content/gallery"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Caption", name: "caption", widget: "string", required: false }
+      - { label: "Date", name: "date", widget: "datetime" }
