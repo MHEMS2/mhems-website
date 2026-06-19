@@ -1,11 +1,8 @@
 ---
-title: "Contact"
-layout: "contact"
+title: Contact
+layout: contact
 phones:
-  - label: "Main Office"
-    number: "(423) 000-0000"
-  - label: "Non-Emergency"
-    number: "(423) 000-0000"
-  - label: "Administration"
-    number: "(423) 000-0000"
+  - label: Administrative Office
+    number: (423) 587-3280
 ---
+Administrative Hours are Monday - Friday 8:00am - 5:00pm
