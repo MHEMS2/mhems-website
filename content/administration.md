@@ -9,7 +9,7 @@ staff:
     bio: Add Director bio here.
   - name: Claude D. Thompson Jr.
     title: Deputy Director
-    credentials: Critical Care Paramedic · Registered Nurse
+    credentials: Critical Care Paramedic - IC · Registered Nurse
     photo: /images/uploads/510507688_10237842260657823_4811824124465597445_n.jpg
     bio: >-
       Claude D. Thompson Jr. began his career in emergency medical services at
