@@ -45,4 +45,5 @@ staff:
       experience as a licensed Paramedic to her work.
 
       In her role, Sallah oversees scheduling and staffing operations while also serving as Lead Instructor for the MHEMS in-house EMT program. Her dual focus on operations and education reflects a commitment to both the efficiency of the service and the professional development of its personnel.
+    photo: /images/uploads/img_2310.jpg
 ---
