@@ -10,7 +10,7 @@ staff:
   - name: Claude D. Thompson Jr.
     title: Deputy Director
     credentials: Paramedic · Registered Nurse
-    photo: ""
+    photo: /images/uploads/510507688_10237842260657823_4811824124465597445_n.jpg
     bio: >-
       Claude D. Thompson Jr. began his career in emergency medical services at
       the age of 13 through the Rescue Squad Explorer Program, a foundation that
