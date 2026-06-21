@@ -5,7 +5,7 @@ staff:
   - name: Danny Houseright
     title: Director
     credentials: Paramedic
-    photo: ""
+    photo: /images/uploads/img_2309.jpg
     bio: >-
       Danny Houseright's commitment to emergency services spans more than 35
       years, beginning as a volunteer with the Morristown Rescue Squad — an
