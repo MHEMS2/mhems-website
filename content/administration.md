@@ -18,11 +18,13 @@ staff:
       Deputy Director of Morristown-Hamblen EMS, a role he was promoted to in
       2026.
 
-      Thompson holds dual credentials as a Registered Nurse and Critical Care Paramedic, and is a Tennessee Licensed EMT/Paramedic Instructor. In addition to his administrative duties, he serves as Program Director for Morristown-Hamblen EMS's in-house EMT Basic and Advanced programs, overseeing the development of the next generation of emergency medical professionals in Hamblen County.
+      Thompson holds dual credentials as a Registered Nurse and Critical Care Paramedic, and is a Tennessee Licensed EMT/Paramedic Instructor. 
+
+      In addition to his administrative duties, he serves as Program Director for Morristown-Hamblen EMS's in-house EMT Basic and Advanced programs, overseeing the development of the next generation of emergency medical professionals in Hamblen County.
 
       He also serves as Chief of the Medical Examiner's Office for Hamblen County, reflecting the breadth of his expertise and commitment to public service beyond emergency response.
 
-      Thompson is dedicated to the men and women of Morristown-Hamblen EMS who report each day to deliver vital, life-saving care to the community they proudly serve. Director bio here.
+      Thompson is dedicated to the men and women of Morristown-Hamblen EMS who report each day to deliver vital, life-saving care to the community they proudly serve. 
   - name: Meghan Sallah
     title: Training & Operations Coordinator
     credentials: Add credentials here
