@@ -6,7 +6,16 @@ staff:
     title: Director
     credentials: Paramedic
     photo: ""
-    bio: Add Director bio here.
+    bio: >-
+      Danny Houseright's commitment to emergency services spans more than 35
+      years, beginning as a volunteer with the Morristown Rescue Squad — an
+      organization he continues to serve today as Sergeant. His dedication to
+      the community has never wavered, and that foundation of service has shaped
+      his approach to leading one of the region's most respected EMS agencies.
+
+      Houseright has led Morristown-Hamblen EMS for nearly 20 years, guiding the service with a steady focus on delivering high-quality emergency medical care to the citizens of Hamblen County in the most fiscally responsible manner possible. Under his leadership, MHEMS has remained a reliable, well-managed agency committed to both clinical excellence and sound stewardship of resources.
+
+      A licensed Paramedic, Houseright has been recognized by the Tennessee Ambulance Services Association with the Administrator of the Year award — a testament to his peers' respect for his leadership and dedication to the profession.
   - name: Claude D. Thompson Jr.
     title: Deputy Director
     credentials: Critical Care Paramedic - IC · Registered Nurse
