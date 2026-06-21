@@ -27,6 +27,6 @@ staff:
       Thompson is dedicated to the men and women of Morristown-Hamblen EMS who report each day to deliver vital, life-saving care to the community they proudly serve. 
   - name: Meghan Sallah
     title: Training & Operations Coordinator
-    credentials: Add credentials here
+    credentials: Paramedic-IC
     bio: Add Training & Operations Coordinator bio here.
 ---
