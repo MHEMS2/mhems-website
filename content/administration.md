@@ -4,7 +4,7 @@ layout: administration
 staff:
   - name: Danny Houseright
     title: Director
-    credentials: Add credentials here
+    credentials: Paramedic
     photo: ""
     bio: Add Director bio here.
   - name: Claude D. Thompson Jr.
