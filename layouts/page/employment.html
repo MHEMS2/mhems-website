@@ -19,6 +19,17 @@
       {{ end }}
     </div>
 
+    {{ with .Params.posting_pdf }}
+    <div class="employment-box mb-3">
+      <h3>Current Opening{{ with $.Params.posting_title }}: {{ . }}{{ end }}</h3>
+      {{ with $.Params.posting_deadline }}<p>Applications are being accepted through <strong>{{ . }}</strong>.</p>{{ end }}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Download Job Posting (PDF) →</a>
+      {{ with $.Params.resume_email }}
+      <p style="margin-top:1rem;">To apply, complete the online application above <strong>and</strong> email a résumé, brief cover letter, and three professional references to <a href="mailto:{{ . }}">{{ . }}</a>.</p>
+      {{ end }}
+    </div>
+    {{ end }}
+
     {{ .Content }}
 
     <div class="grid-3 mt-3">
