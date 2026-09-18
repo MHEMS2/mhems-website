@@ -57,7 +57,11 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Intro Blurb", name: "blurb", widget: "text" }
-          - { label: "Google Doc URL", name: "doc_url", widget: "string" }
+          - { label: "Application Form URL", name: "doc_url", widget: "string" }
+          - { label: "Current Opening: Job Title", name: "posting_title", widget: "string", required: false, hint: "Leave blank to hide the Current Opening box" }
+          - { label: "Current Opening: Application Deadline", name: "posting_deadline", widget: "string", required: false, hint: "e.g. October 2, 2026" }
+          - { label: "Current Opening: Job Posting PDF", name: "posting_pdf", widget: "file", required: false }
+          - { label: "Current Opening: Résumé Email", name: "resume_email", widget: "string", required: false, hint: "e.g. careers@mhems.com" }
           - { label: "Body", name: "body", widget: "markdown", required: false }
 
       - label: "Contact Page"
