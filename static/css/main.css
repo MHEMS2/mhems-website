@@ -474,7 +474,8 @@ section { padding: 4rem 0; }
 }
 .employment-box h3 { color: var(--white); margin-bottom: 0.75rem; }
 .employment-box p { color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; }
-
+.employment-box a:not(.btn) { color: var(--gold-light); text-decoration: underline; }
+.employment-box a:not(.btn):hover { color: var(--white); }
 /* ── Footer ── */
 .site-footer {
   background: var(--navy-dark);
